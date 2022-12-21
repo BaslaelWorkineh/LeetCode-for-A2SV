@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int numOfElement;
+    cin >>numOfElement;
+    
+    int array[numOfElement];
+    
+    int temp;
+    int swapCounter = 0;
+    
+    for(int i = 0; i< numOfElement; i++){
+        cin >>array[i];
+    }
+    
+    for(int i=0; i<numOfElement; i++){
+        for(int j=i+1; j<numOfElement; j++){
+            if(array[i]>array[j])
+            {
+                temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;  
+                swapCounter++;              
+            }
+            else
+            {
+                array[i] = array[i];
+            }
+
+        }
+    }
+    cout<<"Array is sorted in "<<swapCounter<<" swaps."<<endl;
+    cout<<"First Element: "<<array[0]<<endl;
+    cout<<"Last Element: "<<array[numOfElement-1]<<endl;
+    return 0;
+}
