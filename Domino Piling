@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+/* I have submmited 2 times before but it was on another compiler...which ofcourse gave me an error*/
 int main()
 {
   int boardW;
