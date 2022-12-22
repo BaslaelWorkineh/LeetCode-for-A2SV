@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  int boardW;
+  int boardH;
+  
+  cin>>boardW;
+  cin>>boardH;
+  
+  int boardSize = boardW*boardH;
+  int amountOfDomino = boardSize/2;
+  
+  cout<<amountOfDomino<<endl;
+
+
+return 0;
+}
