@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    
+
+    int num;
+    cin>>num;
+    int arr[num];
+    for(int i=0; i<num; i++){
+        cin>>arr[i];
+    }
+    int min = arr[0];
+    int max = arr[0];
+    for(int i=0; i<num; i++){
+            
+            if(min>arr[i])
+            {
+                min = arr[i];
+                
+            }
+            if(max<arr[i]){
+                max = arr[i];
+            }
+            
+        }
+    
+//    cout<<"theMax: "<<max<<endl;
+    
+    int countarr[max+1] = { 0 };
+    for(int i=0; i<num; i++){
+        countarr[arr[i]]++;
+    }
+    for(int i=0; i<100; i++){
+        if(i==99)
+            cout<<countarr[i];
+        else
+            cout<<countarr[i]<<" ";
+    }
+    
+/*    for(int i=0; i<max+1; i++){
+        for(int j=countarr[i]; j>0; j--){
+            if(i==max && j==1)
+                cout<<i;
+            else
+                cout<<i<<" ";
+        }
+    }*/
+    
+    
+    return 0;
+}
