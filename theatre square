@@ -1,0 +1,22 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main(){
+    double n,m,a;
+    cin>>n>>m>>a;
+
+    int ans;
+    
+    long long width;
+    long long height;
+    
+    width = ceil(n/a);
+    height = ceil(m/a);
+    
+
+     ans = width*height;
+    cout<<ans;
+
+    return 0;
+}
